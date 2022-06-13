@@ -21,7 +21,7 @@ jobs:
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: docker tag
-        run: docker tag valid_password:latest lgrar/ajc:test
+        run: docker tag valid_password:latest adamkh2/dockerhubdevops:tagname
       - name: docker push
-        run: docker push lgrar/ajc:test
+        run: docker push adamkh2/dockerhubdevops:tagname
       

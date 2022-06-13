@@ -12,3 +12,7 @@ jobs:
       - name: build docker image
         run:
           docker build -t valid_password .
+      - name: run docker image
+        run:
+          docker run valid_password
+      

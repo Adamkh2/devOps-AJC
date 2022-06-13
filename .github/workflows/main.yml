@@ -2,10 +2,10 @@ name: CI
 on: [push]
 jobs:
   test_build_run_push:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: Run tests
-      run :
-        pip install pytest
-        pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run :
+          pip install pytest
+          pytest

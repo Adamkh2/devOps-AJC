@@ -11,7 +11,7 @@ jobs:
           pytest
       - name: build docker image
         run:
-          docker build -t valid_password .
+          docker build -t valid_password2 .
       - name: run docker image
         run:
           docker run valid_password2

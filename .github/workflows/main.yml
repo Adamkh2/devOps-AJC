@@ -2,7 +2,7 @@ name: CI
 on: 
   push:
     branches-ignore:
-    - main
+    - nouveauCI
 jobs:
   test_build_run_push:
     runs-on: ubuntu-latest

@@ -1,5 +1,8 @@
 name: CI
-on: [push]
+on: 
+  push:
+    branches-ignore:
+    - branch2
 jobs:
   test_build_run_push:
     runs-on: ubuntu-latest
